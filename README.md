@@ -4,7 +4,7 @@
 
 > A calculator to help every aspiring Math Magician with their Math Magic.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./public/screenshot.png)
 
 Additional description about the project and its features.
 
@@ -13,9 +13,9 @@ Additional description about the project and its features.
 - Node.js
 - React
 
-## Live Demo
+<!-- ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://livedemo.com) -->
 
 
 ## Getting Started
@@ -35,11 +35,11 @@ To get a local copy up and running follow these simple example steps.
 - Open `index.html` in the `build` directory.
 - Enjoy!
 
-### Usage
+<!-- ### Usage
 
 ### Run tests
 
-### Deployment
+### Deployment -->
 
 
 
@@ -61,11 +61,11 @@ Feel free to check the [issues page](../../issues/).
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
+<!-- ## Acknowledgments
 
 - Hat tip to anyone whose code was used
 - Inspiration
-- etc
+- etc -->
 
 ## 📝 License
 
