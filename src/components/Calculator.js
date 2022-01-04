@@ -10,7 +10,7 @@ export default class Calculator extends React.Component {
 
   render() {
     const buttonNames = [
-      'AC', '+/-', '%', 'U00F7',
+      'AC', '+/-', '%', '\u00F7',
       '7', '8', '9', 'x',
       '4', '5', '6', '-',
       '1', '2', '3', '+',
