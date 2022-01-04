@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Button = (props) => {
   const { name } = props;
@@ -7,6 +8,9 @@ const Button = (props) => {
       {name}
     </td>
   );
+};
+Button.propTypes = {
+  name: PropTypes.string.isRequired,
 };
 
 const Row = (props) => {
@@ -18,6 +22,9 @@ const Row = (props) => {
       {buttons}
     </tr>
   );
+};
+Row.propTypes = {
+  names: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 const Calculator = () => {
