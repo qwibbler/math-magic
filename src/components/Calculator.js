@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from './Button';
-// import Row from './Row';
 
 export default class Calculator extends React.Component {
   constructor(props) {
