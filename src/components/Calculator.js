@@ -5,7 +5,19 @@ import calculate from '../logic/calculate';
 export default class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      calculatorDataObject: {},
+    };
+  }
+
+  buttonClicked(event) {
+    const buttonName = event.target.value;
+    const { calculatorDataObject } = this.state;
+    this.setState(
+      {
+        calculatorDataObject: calculate(calculatorDataObject, buttonName),
+      },
+    );
   }
 
   render() {
