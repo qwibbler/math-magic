@@ -5,13 +5,17 @@ import calculate from '../logic/calculate';
 export default class Calculator extends React.Component {
   constructor(props) {
     super(props);
+    this.clickHandlerInherit = this.clickHandlerInherit.bind(this);
     this.state = {
-      calculatorDataObject: {},
+      calculatorDataObject: {
+        // total: null,
+        // next: null,
+        // operation: null,
+      },
     };
   }
 
-  buttonClicked(event) {
-    const buttonName = event.target.value;
+  clickHandlerInherit(buttonName) {
     const { calculatorDataObject } = this.state;
     this.setState(
       {
@@ -29,11 +33,18 @@ export default class Calculator extends React.Component {
       '0', '.', '=',
     ];
     const buttonsArray = [];
-    buttonNames.forEach((button) => buttonsArray.push(<Button name={button} />));
+    buttonNames.forEach((button) => buttonsArray.push(
+      <Button name={button} clickHandlerInherited={this.clickHandlerInherit} />,
+    ));
+    const { calculatorDataObject } = this.state;
 
     return (
       <div id="calculator">
-        <div id="calc-display">0</div>
+        <div id="calc-display">
+          <div id="previous">{calculatorDataObject.total}</div>
+          <div id="operation">{calculatorDataObject.operation}</div>
+          <div id="current">{calculatorDataObject.next}</div>
+        </div>
         <div id="calc-buttons">
           {buttonsArray}
         </div>
