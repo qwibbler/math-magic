@@ -5,13 +5,12 @@ import calculate from '../logic/calculate';
 export default class Calculator extends React.Component {
   constructor(props) {
     super(props);
-    this.clickHandlerInherit = this.clickHandlerInherit.bind(this);
     this.state = {
       calculatorDataObject: {},
     };
   }
 
-  clickHandlerInherit(buttonName) {
+  clickHandlerInherit = (buttonName) => {
     const { calculatorDataObject } = this.state;
     this.setState(
       {
@@ -20,7 +19,7 @@ export default class Calculator extends React.Component {
     );
   }
 
-  render() {
+  render = () => {
     const buttonNames = [
       'AC', '+/-', '%', '÷',
       '7', '8', '9', 'x',
