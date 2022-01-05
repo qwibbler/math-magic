@@ -7,11 +7,7 @@ export default class Calculator extends React.Component {
     super(props);
     this.clickHandlerInherit = this.clickHandlerInherit.bind(this);
     this.state = {
-      calculatorDataObject: {
-        // total: null,
-        // next: null,
-        // operation: null,
-      },
+      calculatorDataObject: {},
     };
   }
 
@@ -41,9 +37,11 @@ export default class Calculator extends React.Component {
     return (
       <div id="calculator">
         <div id="calc-display">
-          <div id="previous">{calculatorDataObject.total}</div>
-          <div id="operation">{calculatorDataObject.operation}</div>
-          <div id="current">{calculatorDataObject.next}</div>
+          {calculatorDataObject.total}
+          &nbsp;
+          {calculatorDataObject.operation}
+          &nbsp;
+          {calculatorDataObject.next}
         </div>
         <div id="calc-buttons">
           {buttonsArray}
