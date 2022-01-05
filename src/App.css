@@ -31,7 +31,17 @@ input[type="button"] {
   border: 1px solid #d0d0d0;
 }
 
+input[type="button"]:hover {
+  color: #fff;
+  background-color: #a8a7a7;
+}
+
 #calc-buttons > input:last-child,
 #calc-buttons > input:nth-child(4n) {
   background-color: #f5913e;
+}
+
+#calc-buttons > input:last-child:hover,
+#calc-buttons > input:nth-child(4n):hover {
+  background-color: #ff7300;
 }
