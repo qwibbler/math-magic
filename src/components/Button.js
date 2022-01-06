@@ -8,8 +8,8 @@ export default class Button extends React.Component {
   }
 
   clickHandler = (e) => {
-    const { clickHandlerInherited } = this.props;
-    clickHandlerInherited(e.target.value);
+    const { click } = this.props;
+    click(e.target.value);
   }
 
   render = () => {
@@ -27,5 +27,5 @@ export default class Button extends React.Component {
 }
 Button.propTypes = {
   name: PropTypes.string.isRequired,
-  clickHandlerInherited: PropTypes.func.isRequired,
+  click: PropTypes.func.isRequired,
 };
