@@ -21,7 +21,7 @@ const Calculator = () => {
   ));
 
   return (
-    <div id="calculator">
+    <div id="calculator-wrapper">
       <div id="calc-display">
         {calcObj.total}
         &nbsp;
