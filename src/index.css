@@ -8,32 +8,3 @@ body {
   width: 100vw;
   overflow-x: hidden;
 }
-
-main {
-  width: 100%;
-  margin: 1rem;
-}
-
-.calculator main {
-  display: flex;
-  width: 100vw;
-  padding: 0 3rem 0 0;
-  justify-content: space-around;
-}
-
-h2 {
-  font-size: 2rem;
-  margin: 1rem 2rem;
-}
-
-p {
-  font-size: 1.2rem;
-  margin: 1rem 2rem;
-}
-
-@media (max-width: 767px) {
-  .calculator main {
-    flex-direction: column;
-    padding: 0 3rem 0 0;
-  }
-}
