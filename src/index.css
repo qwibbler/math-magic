@@ -23,12 +23,12 @@ main {
 
 h2 {
   font-size: 2rem;
-  margin: 1rem;
+  margin: 1rem 2rem;
 }
 
 p {
   font-size: 1.2rem;
-  margin: 1rem;
+  margin: 1rem 2rem;
 }
 
 @media (max-width: 767px) {

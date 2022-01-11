@@ -1,10 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
-import './App.css';
+import CalculatorPage from './pages/CalculatorPage';
 
 const App = () => (
   <div className="App">
-    <HomePage />
+    <Router>
+      <Routes>
+        <Route exact path="/" element={<HomePage />} />
+        <Route exact path="/calculator" element={<CalculatorPage />} />
+      </Routes>
+    </Router>
   </div>
 );
 

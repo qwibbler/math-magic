@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { GiMagickTrick } from 'react-icons/gi';
 import './Header.css';
 
@@ -9,11 +10,11 @@ const Header = () => (
       Math Magicians
     </h1>
     <nav>
-      <a href="https://react-icons.github.io/react-icons/search?q=magic">Home</a>
+      <Link to="/"> Home </Link>
       |
-      <a href="https://react-icons.github.io/react-icons/search?q=magic">Calculator</a>
+      <Link to="/calculator"> Calculator </Link>
       |
-      <a href="https://react-icons.github.io/react-icons/search?q=magic">Quote</a>
+      <Link to="/quote"> Quote </Link>
     </nav>
   </header>
 );

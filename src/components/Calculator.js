@@ -17,7 +17,7 @@ const Calculator = () => {
   ];
   const buttonsArray = [];
   buttonNames.forEach((button) => buttonsArray.push(
-    <Button name={button} click={clickHandler} />,
+    <Button name={button} click={clickHandler} key={button} />,
   ));
 
   return (
