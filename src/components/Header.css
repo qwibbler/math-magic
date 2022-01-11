@@ -3,6 +3,8 @@ header {
   align-items: center;
   justify-content: space-between;
   width: 100vw;
+  color: #332b5c;
+  background-color: #b0b8dc;
 }
 
 h1,

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { GiMagickTrick } from 'react-icons/gi';
+import { GiMagickTrick, GiSparkles } from 'react-icons/gi';
 import './Header.css';
 
 const Header = () => (
@@ -8,6 +8,7 @@ const Header = () => (
     <h1>
       <GiMagickTrick />
       Math Magicians
+      <GiSparkles />
     </h1>
     <nav>
       <Link to="/"> Home </Link>
