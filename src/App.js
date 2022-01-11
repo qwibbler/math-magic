@@ -1,20 +1,11 @@
 import React from 'react';
-import Calculator from './components/Calculator';
+import HomePage from './pages/HomePage';
 import './App.css';
 
-class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <Calculator />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App">
+    <HomePage />
+  </div>
+);
 
 export default App;

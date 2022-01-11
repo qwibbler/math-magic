@@ -1,0 +1,47 @@
+.App {
+  width: 29rem;
+  margin: auto;
+  text-align: center;
+}
+
+#calc-display {
+  padding: 1.5rem 1rem;
+  text-align: right;
+  font-size: 1.5em;
+  color: #fff;
+  background-color: #858694;
+  border: 1px solid #d0d0d0;
+}
+
+#calc-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background-color: #e0e0e0;
+}
+
+#\30 {
+  grid-column: 1 / 3;
+}
+
+input[type="button"] {
+  height: 100%;
+  width: 100%;
+  padding: 1.5rem 1rem;
+  background-color: transparent;
+  border: 1px solid #d0d0d0;
+}
+
+input[type="button"]:hover {
+  color: #fff;
+  background-color: #a8a7a7;
+}
+
+#calc-buttons > input:last-child,
+#calc-buttons > input:nth-child(4n) {
+  background-color: #f5913e;
+}
+
+#calc-buttons > input:last-child:hover,
+#calc-buttons > input:nth-child(4n):hover {
+  background-color: #ff7300;
+}
