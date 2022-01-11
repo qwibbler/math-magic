@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../components/Header';
+import MagicHat from '../hat_magic.png';
 
 const HomePage = () => (
   <section className="home">
@@ -44,6 +45,7 @@ const HomePage = () => (
         tortor eget diam rhoncus, non rutrum justo cursus. Nullam vitae pellentesque
         urna, ut suscipit elit. Nulla porta eros justo, sit amet ullamcorper sem scelerisque quis.
       </p>
+      <img src={MagicHat} alt="Magic Hat" />
     </main>
   </section>
 );

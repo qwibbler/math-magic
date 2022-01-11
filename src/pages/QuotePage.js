@@ -1,6 +1,7 @@
 import React from 'react';
 import Header from '../components/Header';
 import quotes from '../components/quotes';
+import MagicHat from '../hat_magic.png';
 
 const QuotePage = () => {
   const getRndInteger = (minimum = 0, maximum) => (
@@ -12,6 +13,7 @@ const QuotePage = () => {
     <section className="quote">
       <Header />
       <main>
+        <img src={MagicHat} alt="Magic Hat" />
         <h2>
           {quote.quote}
           <br />

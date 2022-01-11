@@ -2,7 +2,7 @@ import React from 'react';
 import Header from '../components/Header';
 
 const NoMatch = () => (
-  <section className="home">
+  <section className="noMatch">
     <Header />
     <main>
       <h2>

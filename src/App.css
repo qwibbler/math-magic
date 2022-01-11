@@ -1,14 +1,7 @@
 
 main {
-  width: 100%;
-  margin: 1rem;
-}
-
-.calculator main {
-  display: flex;
   width: 100vw;
-  padding: 0 3rem 0 0;
-  justify-content: space-around;
+  margin: 1rem;
 }
 
 h2 {
@@ -16,14 +9,45 @@ h2 {
   margin: 1rem 2rem;
 }
 
-.quote h2 {
+p {
+  font-size: 1.2rem;
+  margin: 1rem 2rem;
+}
+
+.home main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home img {
+  height: 8rem;
+  text-align: center;
+}
+
+.calculator main {
+  display: flex;
+  padding: 0 3rem 0 0;
+  justify-content: space-around;
+}
+
+.quote main {
+  display: flex;
+  height: 100%;
+  margin: 10rem 3rem 1rem 3rem;
+}
+
+.calculator img {
+  height: 20rem;
+}
+
+.noMatch h2 {
   position: fixed;
   top: 40%;
 }
 
-p {
-  font-size: 1.2rem;
-  margin: 1rem 2rem;
+.quote img {
+  height: 5rem;
 }
 
 @media (max-width: 767px) {
