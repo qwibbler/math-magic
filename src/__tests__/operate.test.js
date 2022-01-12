@@ -1,4 +1,4 @@
-import operate from './operate';
+import operate from '../logic/operate';
 
 describe('Test: Operate:', () => {
   test('1 + 2 = 3', () => {
@@ -26,10 +26,14 @@ describe('Test: Operate:', () => {
   });
 
   test('6 % 0 = error', () => {
-    expect(operate('6', '0', '%')).toBe("Can't find modulo as can't divide by 0.");
+    expect(operate('6', '0', '%')).toBe(
+      "Can't find modulo as can't divide by 0.",
+    );
   });
 
   test('6 ^ 0 = error', () => {
-    expect(() => { operate('6', '0', '^'); }).toThrowError("Unknown operation '^'");
+    expect(() => {
+      operate('6', '0', '^');
+    }).toThrowError("Unknown operation '^'");
   });
 });

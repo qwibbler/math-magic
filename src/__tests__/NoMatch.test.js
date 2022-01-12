@@ -1,13 +1,13 @@
 import React from 'react';
-import HomePage from './HomePage';
+import NoMatch from '../pages/NoMatch';
 import renderer from 'react-test-renderer';
 import { HashRouter as Router } from 'react-router-dom';
 
-test('HomePage', () => {
+test('NoMatch', () => {
   const tree = renderer
     .create(
       <Router>
-        <HomePage />
+        <NoMatch />
       </Router>,
     )
     .toJSON();

@@ -1,15 +1,16 @@
 import React from 'react';
-import CalculatorPage from './CalculatorPage';
+import Header from '../components/Header';
 import renderer from 'react-test-renderer';
 import { HashRouter as Router } from 'react-router-dom';
 
 describe('Header', () => {
   test('Header', () => {
-    const tree = renderer.create(
+    const component = renderer.create(
       <Router>
-        <CalculatorPage />
+        <Header />
       </Router>,
-    ).toJSON();
+    );
+    let tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 });
