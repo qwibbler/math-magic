@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../components/Header';
 import renderer from 'react-test-renderer';
-import { render, fireEvent } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import { HashRouter as Router } from 'react-router-dom';
+import Header from '../components/Header';
 
 describe('Header', () => {
   test('Header', () => {
@@ -11,7 +11,7 @@ describe('Header', () => {
         <Header />
       </Router>,
     );
-    let tree = component.toJSON();
+    const tree = component.toJSON();
     expect(tree).toMatchSnapshot();
   });
 
@@ -20,27 +20,31 @@ describe('Header', () => {
       render(
         <Router>
           <Header />
-        </Router>
+        </Router>,
       );
-      expect(document.querySelectorAll("a")[0].getAttribute("href")).toBe('#/')
-    })
+      expect(document.querySelectorAll('a')[0].getAttribute('href')).toBe('#/');
+    });
 
     test('Calculator', () => {
       render(
         <Router>
           <Header />
-        </Router>
+        </Router>,
       );
-      expect(document.querySelectorAll("a")[1].getAttribute("href")).toBe('#/calculator')
-    })
+      expect(document.querySelectorAll('a')[1].getAttribute('href')).toBe(
+        '#/calculator',
+      );
+    });
 
     test('Quote', () => {
       render(
         <Router>
           <Header />
-        </Router>
+        </Router>,
       );
-      expect(document.querySelectorAll("a")[2].getAttribute("href")).toBe('#/quote')
-    })
-  })
+      expect(document.querySelectorAll('a')[2].getAttribute('href')).toBe(
+        '#/quote',
+      );
+    });
+  });
 });

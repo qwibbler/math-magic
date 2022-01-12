@@ -1,7 +1,7 @@
 import React from 'react';
-import CalculatorPage from '../pages/CalculatorPage';
 import renderer from 'react-test-renderer';
 import { HashRouter as Router } from 'react-router-dom';
+import CalculatorPage from '../pages/CalculatorPage';
 
 describe('Header', () => {
   test('Header', () => {
