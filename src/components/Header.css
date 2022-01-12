@@ -1,0 +1,40 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  color: #332b5c;
+  background-color: #b0b8dc;
+}
+
+h1,
+h1 svg {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  margin: 1rem;
+}
+
+nav,
+nav a {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  h1,
+  nav {
+    margin: 0 1rem;
+  }
+
+  nav {
+    align-self: flex-end;
+  }
+}

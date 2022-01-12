@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Button from './Button';
 import calculate from '../logic/calculate';
+import './Calculator.css';
 
 const Calculator = () => {
   const [calcObj, setCalcObj] = useState({});
@@ -16,11 +17,11 @@ const Calculator = () => {
   ];
   const buttonsArray = [];
   buttonNames.forEach((button) => buttonsArray.push(
-    <Button name={button} click={clickHandler} />,
+    <Button name={button} click={clickHandler} key={button} />,
   ));
 
   return (
-    <div id="calculator">
+    <div id="calculator-wrapper">
       <div id="calc-display">
         {calcObj.total}
         &nbsp;
