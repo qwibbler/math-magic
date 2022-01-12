@@ -33,18 +33,6 @@ const HomePage = () => (
         a nibh nec libero pellentesque semper et vel lacus. Integer quis
         magna quam
       </p>
-
-      <p>
-        Mauris tincidunt laoreet nisi, tincidunt tincidunt est dictum vitae.
-        Duis cursus imperdiet mauris in tincidunt. Etiam porta fermentum dignissim.
-        Integer venenatis cursus neque eget vulputate. Vestibulum at molestie risus,
-        non cursus lacus. Maecenas vulputate felis risus, vel placerat justo vehicula
-        sit amet. Ut tincidunt semper lacus, sed aliquet nisl ornare quis.
-        Proin hendrerit quam eget tellus tincidunt blandit. Mauris mollis diam vitae
-        lobortis consectetur. Sed eu iaculis dui, at varius metus. Maecenas semper
-        tortor eget diam rhoncus, non rutrum justo cursus. Nullam vitae pellentesque
-        urna, ut suscipit elit. Nulla porta eros justo, sit amet ullamcorper sem scelerisque quis.
-      </p>
       <img src={MagicHat} alt="Magic Hat" />
     </main>
   </section>
