@@ -24,7 +24,11 @@ export default function calculate(obj, buttonName) {
 
   if (isNumber(buttonName)) {
     if (buttonName === '0' && obj.next === '0') {
-      return {}; // Todo: should be {...obj}
+      return { ...obj }; // Todo: should be {...obj}
+    }
+    // Trim excess 0
+    if (buttonName !== '0' && obj.next === '0') {
+      return { ...obj, next: buttonName }; // Todo: should be {...obj}
     }
     // If there is an operation, update next
     if (obj.operation) {

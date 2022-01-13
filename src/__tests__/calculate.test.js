@@ -11,7 +11,13 @@ describe('Test: Calculate:', () => {
     test('Obj next = 0, Button = 0', () => {
       expect(
         calculate({ total: '1', next: '0', operation: '*', }, '0'))
-        .toEqual({});
+        .toEqual({ total: '1', next: '0', operation: '*', });
+    });
+
+    test('Obj next = 0, Button = 2', () => {
+      expect(
+        calculate({ total: '1', next: '0', operation: '*', }, '2'))
+        .toEqual({ total: '1', next: '2', operation: '*', });
     });
 
     test('Obj operation, next = 2, Button = 3', () => {
