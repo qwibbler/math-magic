@@ -24,7 +24,11 @@ export default function calculate(obj, buttonName) {
 
   if (isNumber(buttonName)) {
     if (buttonName === '0' && obj.next === '0') {
-      return {}; // Todo: should be {...obj}
+      return { ...obj }; // Todo: should be {...obj}
+    }
+    // Trim excess 0
+    if (buttonName !== '0' && obj.next === '0') {
+      return { ...obj, next: buttonName }; // Todo: should be {...obj}
     }
     // If there is an operation, update next
     if (obj.operation) {
@@ -58,15 +62,16 @@ export default function calculate(obj, buttonName) {
     }
     if (obj.total) {
       if (obj.total.includes('.')) {
-        return {}; // Todo: should be { next: '0.' }
+        return { total: null, next: '0.' }; // TODO
       }
-      return { total: `${obj.total}.` }; // Todo: should be { next: `${obj.total}.` }
+      return { total: `${obj.total}.` }; // Todo: should be { next: `${obj.total}.` } - or not.
     }
-    return { total: '0.' }; // Todo: should be { next: '0.' }
+    return { next: '0.' }; // Todo: should be { next: '0.' }
   }
 
   if (buttonName === '=') {
-    if (obj.next && obj.operation) { // Todo: && total
+    if (obj.next && obj.operation) {
+      // Todo: && total
       return {
         total: operate(obj.total, obj.next, obj.operation),
         next: null,
@@ -90,13 +95,19 @@ export default function calculate(obj, buttonName) {
   // Button must be an operation
 
   // When the user presses an operation button without having entered
-  // a number first, do nothing.
-  // if (!obj.next && !obj.total) { -----> Todo: Why NOT do nothing
-  //   return {};
-  // }
+  // a number first,
+  if (!obj.next && !obj.total) {
+    // Todo: if it is a +, -, +/-
+    // if (buttonName === '+' || buttonName === '-' || buttonName === '+/-') {
+    //   obj.next = '-'
+    // }
 
-  // User pressed an operation after pressing '='
-  if (!obj.next && obj.total && !obj.operation) {
+    // do nothing.
+    return {};
+  }
+
+  // User pressed an operation after pressing '=' (only total)
+  if (obj.total && !obj.next && !obj.operation) {
     return { ...obj, operation: buttonName };
   }
 
@@ -116,9 +127,9 @@ export default function calculate(obj, buttonName) {
   // no operation yet, but the user typed one
 
   // The user hasn't typed a number yet, just save the operation
-  if (!obj.next) {
-    return { operation: buttonName }; //  Todo: Why NOT do nothing
-  }
+  // if (!obj.next) {
+  //   return { operation: buttonName };
+  // }
 
   // save the operation and shift 'next' into 'total'
   return {

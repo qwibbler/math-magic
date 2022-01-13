@@ -31,9 +31,7 @@ describe('Header', () => {
           <Header />
         </Router>,
       );
-      expect(document.querySelectorAll('a')[1].getAttribute('href')).toBe(
-        '#/calculator',
-      );
+      expect(document.querySelectorAll('a')[1].getAttribute('href')).toBe('#/calculator');
     });
 
     test('Quote', () => {
@@ -42,9 +40,7 @@ describe('Header', () => {
           <Header />
         </Router>,
       );
-      expect(document.querySelectorAll('a')[2].getAttribute('href')).toBe(
-        '#/quote',
-      );
+      expect(document.querySelectorAll('a')[2].getAttribute('href')).toBe('#/quote');
     });
   });
 });
