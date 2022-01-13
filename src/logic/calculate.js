@@ -70,7 +70,8 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '=') {
-    if (obj.next && obj.operation) { // Todo: && total
+    if (obj.next && obj.operation) {
+      // Todo: && total
       return {
         total: operate(obj.total, obj.next, obj.operation),
         next: null,

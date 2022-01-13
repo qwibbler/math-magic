@@ -1,7 +1,7 @@
 import React from 'react';
-import NoMatch from '../pages/NoMatch';
 import renderer from 'react-test-renderer';
 import { HashRouter as Router } from 'react-router-dom';
+import NoMatch from '../pages/NoMatch';
 
 test('NoMatch', () => {
   const tree = renderer

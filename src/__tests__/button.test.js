@@ -7,8 +7,8 @@ describe('Button', () => {
     const tree = renderer
       .create(
         <Button
-          name={'test'}
-          click={function() {
+          name="test"
+          click={function () {
             console.log('test');
           }}
         />,
