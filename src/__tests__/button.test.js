@@ -8,9 +8,7 @@ describe('Button', () => {
       .create(
         <Button
           name="test"
-          click={function () {
-            console.log('test');
-          }}
+          click={() => { }}
         />,
       )
       .toJSON();
