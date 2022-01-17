@@ -42,6 +42,9 @@ To get a local copy up and running follow these simple example steps.
 - Go to the ***Calculator*** page to *do* the magic we do.
 - Go to the ***Quote*** page to see a random math magical spell.
 
+### Test
+- Run `npm test` in the terminal
+
 ## Authors
 
 👤 **Humaira Zaman**
