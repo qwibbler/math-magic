@@ -11,7 +11,10 @@
 Additional description about the project and its features.
 
 # Live Demo
-[Demo page](https://qwibbler.github.io/math-magic/)
+
+- [Github Pages](https://qwibbler.github.io/math-magic/)
+- [Heroku](https://my-magical-math.herokuapp.com/)
+- [Netifly](https://my-magical-math.netlify.app/)
 
 ## Built With
 
@@ -25,24 +28,29 @@ Additional description about the project and its features.
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
+
 - Node.js
 
 ### Setup
+
 - Clone this repository.
 - `cd` into the directory.
 
 ### Install
+
 - Enter `npm install` in the terminal.
 - Then enter `npm run build`.
 - Open `index.html` in the `build` directory.
 - Enjoy!
 
 ### Usage
-- Go to the ***Home*** page to *see* the magic we do.
-- Go to the ***Calculator*** page to *do* the magic we do.
-- Go to the ***Quote*** page to see a random math magical spell.
+
+- Go to the **_Home_** page to _see_ the magic we do.
+- Go to the **_Calculator_** page to _do_ the magic we do.
+- Go to the **_Quote_** page to see a random math magical spell.
 
 ### Test
+
 - Run `npm test` in the terminal
 
 ## Authors
