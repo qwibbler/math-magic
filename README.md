@@ -12,9 +12,9 @@ Additional description about the project and its features.
 
 # Live Demo
 
-[Github Pages](https://qwibbler.github.io/math-magic/)
-[Heroku](https://my-magical-math.herokuapp.com/)
-[Netifly](https://my-magical-math.netlify.app/)
+- [Github Pages](https://qwibbler.github.io/math-magic/)
+- [Heroku](https://my-magical-math.herokuapp.com/)
+- [Netifly](https://my-magical-math.netlify.app/)
 
 ## Built With
 
